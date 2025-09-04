@@ -5,7 +5,7 @@ import { Title } from "../shared/Title";
 import { ContactInfoItem } from "../shared/ContactInfoItem";
 import { ContactForm } from "../shared/ContactForm";
 
-
+import contact from "../../assets/office.jpg";
 
 export default function Contact() {
   return (
@@ -20,13 +20,22 @@ export default function Contact() {
             </SectionTitle>
 
             <Title className="mb-6 text-gray-900">
-              Ready to Take Control of Your Finances? Let&apos;s Connect
+              Let’s Talk About Your Future
             </Title>
 
             <p className="text-gray-600 mb-8">
               Whether you’re an individual seeking tax guidance or a business looking for full-scale 
               financial management, Bennett & Chase is here to help.
             </p>
+
+            {/* Office Image */}
+            <div className="mb-8">
+              <img 
+                src={contact}
+                alt="Modern office space with comfortable seating area, large windows, and professional atmosphere"
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
 
             <div className="space-y-6">
               <ContactInfoItem

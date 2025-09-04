@@ -7,13 +7,17 @@ import { TestimonialCard } from "../cards/TestimonialCard";
 import test1 from "../../assets/testi.jpg";
 import test2 from "../../assets/testimonial.jpg"
 
+import team from "../../assets/teamatwork.png"
+import environment from "../../assets/working-environ.png"
+import consultation from "../../assets/consultation.png"
+
 const testimonials = [
   {
     name: "Sheldon Jackson",
     role: "Founder, Carter & Co.",
     image: test1,
     feedback:
-      "Working with Bennett & Chase completely changed how we handle taxes. They found deductions we never knew existed and helped us stay organized year-round. It’s the first time tax season hasn’t felt stressful.",
+      "Working with Bennett & Chase completely changed how we handle taxes. They found deductions we never knew existed and helped us stay organized year-round. It's the first time tax season hasn't felt stressful.",
   },
   {
     name: "James Rodriguez",
@@ -21,6 +25,34 @@ const testimonials = [
     image: test2,
     feedback:
       "The team at Bennett & Chase is incredibly proactive. Their insights into our financial data have allowed us to make smarter business decisions, leading to significant operational efficiencies and increased revenue.",
+  },
+  {
+    name: "Sarah Mitchell",
+    role: "Owner, Mitchell Marketing",
+    image: test1,
+    feedback:
+      "Bennett & Chase transformed our bookkeeping process. Their attention to detail and monthly reports give us clarity we never had before. Highly recommend their services.",
+  },
+  {
+    name: "David Chen",
+    role: "CFO, TechStart Inc.",
+    image: test2,
+    feedback:
+      "The strategic financial planning they provided helped us secure funding and scale our business. Their expertise in tax optimization saved us thousands.",
+  },
+  {
+    name: "Maria Gonzalez",
+    role: "Director, Retail Plus",
+    image: test2,
+    feedback:
+      "Professional, reliable, and always available when we need them. Their payroll services have streamlined our HR processes significantly.",
+  },
+  {
+    name: "Michael Thompson",
+    role: "President, Thompson Consulting",
+    image: test1,
+    feedback:
+      "Working with Bennett & Chase has been a game-changer. Their financial insights helped us identify new revenue streams and cut unnecessary costs.",
   },
 ];
 
@@ -39,17 +71,64 @@ export default function Testimonials() {
           Hear What Our Clients Say About Working With Us
         </Title>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {testimonials.map((t, idx) => (
-            <TestimonialCard
-              key={idx}
-              name={t.name}
-              role={t.role}
-              image={t.image}
-              feedback={t.feedback}
-            />
-          ))}
+        {/* Background Pattern Images */}
+        <div className="relative">
+          {/* Decorative background images */}
+          <div className="absolute inset-0 opacity-5 pointer-events-none">
+            <div className="grid grid-cols-4 gap-4 h-full">
+              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg" />
+              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg mt-8" />
+              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg" />
+              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg mt-12" />
+            </div>
+          </div>
+
+          {/* Testimonials Grid */}
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {testimonials.map((t, idx) => (
+              <TestimonialCard
+                key={idx}
+                name={t.name}
+                role={t.role}
+                image={t.image}
+                feedback={t.feedback}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Client Logos Section */}
+        <div className="mt-16">
+          <h3 className="text-center text-white text-lg font-medium mb-8">
+            The People, The Place, The Partnership
+          </h3>
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+            <img src="/api/placeholder/120/60" alt="Client Logo" className="h-12 w-auto mx-auto grayscale hover:grayscale-0 transition-all duration-300" />
+          </div> */}
+        </div>
+
+        {/* Team/Office Images */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <img 
+            src={team}
+            alt="Our team at work" 
+            className="w-full h-48 object-cover rounded-lg shadow-lg"
+          />
+          <img 
+            src={environment}
+            alt="Office environment" 
+            className="w-full h-48 object-cover rounded-lg shadow-lg"
+          />
+          <img 
+            src={consultation}
+            alt="Client consultation" 
+            className="w-full h-48 object-cover rounded-lg shadow-lg"
+          />
         </div>
 
         {/* CTA Button */}
