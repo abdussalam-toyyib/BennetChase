@@ -65,7 +65,7 @@ export const Industries = () => {
   ];
 
   return (
-    <section id="industries" className="py-20 bg-gray-100">
+    <section id="industries" className="py-20 bg-[#B8B9F0]">
       <Container>
         {/* Section Header */}
         <div className="text-center mb-16">
