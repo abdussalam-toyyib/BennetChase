@@ -19,7 +19,7 @@ export const ExpertCard = ({
 
   return (
     <div
-      className={` bg-white rounded-lg shadow-md w-[85%] max-w-[520px] h-auto min-h-[200px] max-h-auto flex flex-col items-center p-6 transition-transform duration-300 hover:scale-105 ${className}`}
+      className={` bg-white rounded-lg shadow-md w-[85%] max-w-[520px] h-auto min-h-[150px] max-h-auto flex flex-col items-center p-6 transition-transform duration-300 hover:scale-105 ${className}`}
     >
       {icon && (
         <img

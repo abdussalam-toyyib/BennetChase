@@ -38,7 +38,7 @@ export const About = () => {
       },
       {
           title: 'Excellence',
-          text: 'Strategic tax planning and accurate compliance toCommitted to the highest professional standards.',
+          text: 'Committed to the highest professional standards.',
           icon: excellence,
       },
       {

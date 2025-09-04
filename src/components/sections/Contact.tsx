@@ -24,8 +24,8 @@ export default function Contact() {
             </Title>
 
             <p className="text-gray-600 mb-8">
-              We&apos;re ready to help you move forward with confidence. Reach
-              out today and let’s turn your numbers into real business power.
+              Whether you’re an individual seeking tax guidance or a business looking for full-scale 
+              financial management, Bennett & Chase is here to help.
             </p>
 
             <div className="space-y-6">
