@@ -73,12 +73,6 @@ export default function Services() {
 
     return (
         <section id="services" className="relative py-16 bg-[#151457] overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
-                <div className="absolute top-40 right-20 w-48 h-48 bg-[#B8B9F0] rounded-full blur-3xl"></div>
-                <div className="absolute bottom-20 left-1/3 w-40 h-40 bg-white rounded-full blur-3xl"></div>
-            </div>
 
             <Container className="relative z-10 lg:px-20">
                 {/* Section Title */}
@@ -175,20 +169,20 @@ export default function Services() {
                         </p>
 
                         {/* Features List */}
-                        <ul className="space-y-2 mb-6">
+                        {/* <ul className="space-y-2 mb-6">
                           {item.features.map((feature, idx) => (
                             <li key={idx} className="flex items-center gap-2 text-sm text-gray-400">
                               <div className="w-1.5 h-1.5 bg-[#B8B9F0] rounded-full"></div>
                               <span>{feature}</span>
                             </li>
                           ))}
-                        </ul>
+                        </ul> */}
 
                         {/* CTA Button */}
-                        <button className="w-full flex items-center justify-center gap-2 bg-[#B8B9F0]/10 hover:bg-[#B8B9F0]/20 border border-[#B8B9F0]/30 text-white py-2.5 px-4 rounded-lg transition-all duration-300 group-hover:border-[#B8B9F0]/60">
+                        {/* <button className="w-full flex items-center justify-center gap-2 bg-[#B8B9F0]/10 hover:bg-[#B8B9F0]/20 border border-[#B8B9F0]/30 text-white py-2.5 px-4 rounded-lg transition-all duration-300 group-hover:border-[#B8B9F0]/60">
                           <span className="text-sm font-medium">Learn More</span>
                           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   ))}
@@ -244,22 +238,22 @@ export default function Services() {
                     </div>
                 </div> */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-    <h3 className="text-xl font-bold text-white text-center mb-8">Client Success Stories</h3>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {images.map((image, index) => (
-            <div key={index} className="relative group cursor-pointer">
-                <img 
-                    src={image}
-                    alt={`Success story ${index + 1}`}
-                    className="w-full h-24 object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <p className="text-white text-xs p-2 font-medium">Case Study {index + 1}</p>
+                    <h3 className="text-xl font-bold text-white text-center mb-8">Client Success Stories</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {images.map((image, index) => (
+                            <div key={index} className="relative group cursor-pointer">
+                                <img 
+                                    src={image}
+                                    alt={`Success story ${index + 1}`}
+                                    className="w-full h-24 object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                    <p className="text-white text-xs p-2 font-medium">Case Study {index + 1}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        ))}
-    </div>
-</div>
             </Container>
         </section>
     )

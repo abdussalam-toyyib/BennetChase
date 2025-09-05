@@ -55,12 +55,6 @@ export const About = () => {
 
     return (
         <section id="about" className="relative pt-10 sm:pt-15 lg:pt-20 bg-[#B8B9F0] overflow-hidden">
-            {/* Background decorative images */}
-            <div className="absolute inset-0 opacity-5">
-                <img src="/api/placeholder/300/300" alt="" className="absolute top-20 left-10 w-32 h-32 object-cover rounded-full" />
-                <img src="/api/placeholder/200/200" alt="" className="absolute top-40 right-20 w-24 h-24 object-cover rounded-lg" />
-                <img src="/api/placeholder/150/150" alt="" className="absolute bottom-40 left-20 w-20 h-20 object-cover rounded-full" />
-            </div>
 
             <Container className="lg:px-30 lg:py-10 sm:py-4 md:py-7 relative z-10">
                 <SectionTitle variant="left" color="default" className="">
@@ -77,7 +71,7 @@ export const About = () => {
                                 <img src="/api/placeholder/500/600" alt="" className="w-full h-full object-cover" />
                             </div>
                             
-                            <div className="relative z-10 bg-white/80 backdrop-blur-sm p-6 rounded-lg">
+                            <div className="relative z-10 bg-white/80 backdrop-blur-sm p-6 rounded-lg flex flex-col gap-8">
                                 <Title>Your Trusted Accounting Partner</Title>
                                 <Paragraph>
                                 Bennett & Chase was established with a vision to make accounting more
@@ -179,7 +173,7 @@ export const About = () => {
                                 <div key={key} className="bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
                                     {/* Professional header with subtle image */}
                                     <div className="relative h-32 rounded-t-lg overflow-hidden">
-                                        <img src={item.backgroundImage} alt="" className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
+                                        <img src={item.backgroundImage} alt="" className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-300 sm:opacity-0" />
                                         <div className="absolute inset-0 bg-gradient-to-b from-[#3D506BFF]/10 to-[#3D506BFF]/30"></div>
                                         
                                         {/* Icon overlay */}

@@ -33,27 +33,7 @@ const testimonials = [
     feedback:
       "Bennett & Chase transformed our bookkeeping process. Their attention to detail and monthly reports give us clarity we never had before. Highly recommend their services.",
   },
-  {
-    name: "David Chen",
-    role: "CFO, TechStart Inc.",
-    image: test2,
-    feedback:
-      "The strategic financial planning they provided helped us secure funding and scale our business. Their expertise in tax optimization saved us thousands.",
-  },
-  {
-    name: "Maria Gonzalez",
-    role: "Director, Retail Plus",
-    image: test2,
-    feedback:
-      "Professional, reliable, and always available when we need them. Their payroll services have streamlined our HR processes significantly.",
-  },
-  {
-    name: "Michael Thompson",
-    role: "President, Thompson Consulting",
-    image: test1,
-    feedback:
-      "Working with Bennett & Chase has been a game-changer. Their financial insights helped us identify new revenue streams and cut unnecessary costs.",
-  },
+  
 ];
 
 export default function Testimonials() {
@@ -73,15 +53,6 @@ export default function Testimonials() {
 
         {/* Background Pattern Images */}
         <div className="relative">
-          {/* Decorative background images */}
-          <div className="absolute inset-0 opacity-5 pointer-events-none">
-            <div className="grid grid-cols-4 gap-4 h-full">
-              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg" />
-              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg mt-8" />
-              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg" />
-              <img src="/api/placeholder/200/200" alt="" className="w-full h-32 object-cover rounded-lg mt-12" />
-            </div>
-          </div>
 
           {/* Testimonials Grid */}
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
