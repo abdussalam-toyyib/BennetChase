@@ -1,4 +1,4 @@
-import { Calculator, ArrowRight, CheckCircle, Users, TrendingUp, Shield } from "lucide-react";
+import { Calculator, CheckCircle, Users, TrendingUp, Shield } from "lucide-react";
 import { Container } from "../shared/Container";
 import { SectionTitle } from "../shared/SectionTitle";
 import { Title } from "../shared/Title";
