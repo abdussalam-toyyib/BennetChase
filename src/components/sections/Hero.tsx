@@ -64,25 +64,25 @@ export const Hero = () => {
             Explore Our Services
           </a>
         </div>
-           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg max-w-md w-full sm:w-auto mx-auto mt-6">
-          <h3 className="text-lg sm:text-xl font-semibold text-white mb-3">
-            Our Services at a Glance
-          </h3>
-          <div className="flex flex-col gap-3 text-sm sm:text-base text-white">
-            {[
-              "Business Accounting",
-              "Tax Planning & Compliance",
-              "Audit & Assurance",
-              "Payroll & Bookkeeping",
-              "Financial Advisory",
-            ].map((feature, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[##3D2763FF]" />
-                <span>{feature}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+          {/* <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg max-w-md w-full sm:w-auto mx-auto mt-6">
+            <h3 className="text-lg sm:text-xl font-semibold text-white mb-3">
+              Our Services at a Glance
+            </h3>
+            <div className="flex flex-col gap-3 text-sm sm:text-base text-white">
+              {[
+                "Business Accounting",
+                "Tax Planning & Compliance",
+                "Audit & Assurance",
+                "Payroll & Bookkeeping",
+                "Financial Advisory",
+              ].map((feature, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[##3D2763FF]" />
+                  <span>{feature}</span>
+                </div>
+              ))}
+            </div>
+        </div> */}
       </div>
     </section>
   );
