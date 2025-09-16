@@ -7,7 +7,7 @@ import hero3 from "../../assets/hero3.png";
 import hero4 from "../../assets/hero4.jpg";
 import hero5 from "../../assets/hero5.jpeg";
 import hero6 from "../../assets/hero6.png";
-import { CheckCircle2 } from "lucide-react";
+// import { CheckCircle2 } from "lucide-react";
 
 const heroImages = [hero2, hero3, hero4, hero5, hero6];
 

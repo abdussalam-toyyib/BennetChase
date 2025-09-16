@@ -52,9 +52,9 @@ const Footer: React.FC = () => {
             <li>
               <a href="#industries" className="hover:text-white transition">Industries</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#testimonials" className="hover:text-white transition">Testimonial</a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact" className="hover:text-white transition">Contact</a>
             </li>

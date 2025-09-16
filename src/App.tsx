@@ -4,7 +4,7 @@ import Contact from "./components/sections/Contact"
 import { Hero } from "./components/sections/Hero"
 import { Industries } from "./components/sections/Industries"
 import Services from "./components/sections/Services"
-import Testimonials from "./components/sections/Testimonial"
+// import Testimonials from "./components/sections/Testimonial"
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <About />
       <Services />
       <Industries />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </Layout>
 )
