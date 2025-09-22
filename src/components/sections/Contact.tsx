@@ -2,28 +2,27 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { Container } from "../shared/Container";
 import { SectionTitle } from "../shared/SectionTitle";
 import { Title } from "../shared/Title";
-import { ContactInfoItem } from "../shared/ContactInfoItem";
 import { ContactForm } from "../shared/ContactForm";
 
 import contact from "../../assets/office.jpg";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 bg-[#B8B9F0]">
+    <section id="contact" className="py-16 bg-[#151457] text-gray-300">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <SectionTitle variant="left" color="default" className="mb-4 text-white">
+          <MessageCircle />
+           Contact Us
+        </SectionTitle>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto text-gray-300">
           {/* Left Column */}
-          <div>
-            <SectionTitle variant="left" color="default" className="mb-4">
-              <MessageCircle />
-              Contact Us
-            </SectionTitle>
+          <div className="bg-white/5 p-8 rounded-2xl shadow-sm lg:pb-1">
 
-            <Title className="mb-6 text-gray-900">
+            <Title className="mb-6 text-gray-300">
               Let’s Talk About Your Future
             </Title>
 
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8">
               Whether you’re an individual seeking tax guidance or a business looking for full-scale 
               financial management, Bennett & Chase is here to help.
             </p>
@@ -37,7 +36,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="space-y-6">
+            {/* <div className="space-y-6">
               <ContactInfoItem
                 icon={<MapPin />}
                 title="Our Location"
@@ -55,7 +54,7 @@ export default function Contact() {
                 title="Email Address"
                 lines={["info@bennettchase.com", "support@bennettchase.com"]}
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column */}
