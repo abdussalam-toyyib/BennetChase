@@ -66,13 +66,13 @@ export const Industries = () => {
   <section id="industries" className=" pt-12 sm:pt-16 md:pt-20 lg:pt-[72px] pb-16 bg-[#B8B9F0]">
    <Container>
     {/* Section Header */}
-    <div className="text-left mb-16 relative">
+    <div className="text-left mb-10 relative">
      <SectionTitle className="justify-start text-[#3D2763]">
       <Factory />
       Industries We Serve
      </SectionTitle>
-     <Title className="text-gray-900 mt-4 max-w-[700px]">
-      Powerful Accounting Solutions, Delivered with Precision
+     <Title className="text-gray-900 max-w-[700px]">
+      Empowering Businesses Across Sectors
      </Title>
           {/* <a href="#" className="flex items-center gap-2 absolute top-0 right-0 py-2 px-4 rounded-full border border-gray-400 bg-white text-[#3D2763] hover:bg-gray-100 transition-colors duration-200">
             View All Services <ArrowRight className="w-4 h-4" />
@@ -80,32 +80,32 @@ export const Industries = () => {
     </div>
 
     <div className="flex flex-col lg:flex-row items-stretch gap-12">
-  {/* Left Column: Industry Cards */}
-  <div className="flex flex-col gap-6 flex-1">
-    {industries.map((item, idx) => (
-      <IndustryCard
-        key={idx}
-        title={item.title}
-        text={item.text}
-        icon={item.icon}
-        active={activeIndex === idx}
-        onClick={() => setActiveIndex(idx)}
-      />
-    ))}
-  </div>
+      {/* Left Column: Industry Cards */}
+      <div className="flex flex-col gap-6 flex-1">
+        {industries.map((item, idx) => (
+          <IndustryCard
+            key={idx}
+            title={item.title}
+            text={item.text}
+            icon={item.icon}
+            active={activeIndex === idx}
+            onClick={() => setActiveIndex(idx)}
+          />
+        ))}
+      </div>
 
-  {/* Vertical Divider */}
-  <div className="hidden lg:block w-px bg-white/10" />
+      {/* Vertical Divider */}
+      <div className="hidden lg:block w-px bg-white/10" />
 
-  {/* Right Column: Dynamic Image and Content */}
-  <div className="flex-[1] relative min-h-[400px]">
-    <img
-      src={industries[activeIndex].image}
-      alt={industries[activeIndex].title}
-      className="w-full h-full object-cover rounded-3xl shadow-lg"
-    />
-  </div>
-</div>
+      {/* Right Column: Dynamic Image and Content */}
+      <div className="flex-[1] relative min-h-[400px]">
+        <img
+          src={industries[activeIndex].image}
+          alt={industries[activeIndex].title}
+          className="w-full h-full object-cover rounded-3xl shadow-lg"
+        />
+      </div>
+    </div>
 
 
    </Container>

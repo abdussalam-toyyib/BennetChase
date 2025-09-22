@@ -249,7 +249,7 @@
 
 import { Container } from "../shared/Container"
 import { SectionTitle } from "../shared/SectionTitle"
-import { Minus } from "lucide-react"
+import { FileText } from "lucide-react"
 import { Title } from "../shared/Title"
 import { Paragraph } from "../shared/Paragraph"
 
@@ -307,7 +307,7 @@ export const About = () => {
       <Container className="relative z-10">
         
         <SectionTitle variant="left" color="default">
-          <Minus /> About Us
+          <FileText /> About Us
         </SectionTitle>
 
         <div className="flex flex-col">
@@ -316,7 +316,7 @@ export const About = () => {
             <div className="flex flex-col gap-6 lg:w-1/2">
               
               {/* Stat card */}
-              <div className="relative bg-[#C3C5FF] backdrop-blur-sm rounded-lg p-6 text-gray-800">
+              <div className="relative bg-[#C3C5FF] rounded-lg p-6 text-gray-800">
                 <div className="absolute inset-0 opacity-10 rounded-lg overflow-hidden">
                   <img src="/api/placeholder/400/200" alt="" className="w-full h-full object-cover" />
                 </div>
@@ -342,7 +342,7 @@ export const About = () => {
               </div>
 
               {/* Intro text card */}
-              <div className="relative z-10 bg-[#C3C5FF] backdrop-blur-sm p-6 rounded-lg flex flex-col gap-8 text-gray-800">
+              <div className="relative z-10 bg-[#C3C5FF] p-6 rounded-lg flex flex-col gap-8 text-gray-800">
                 <Title>Your Trusted Accounting Partner</Title>
                 <Paragraph>
                   Bennett & Chase was established with a vision to make accounting more
@@ -376,7 +376,7 @@ export const About = () => {
               {expertItems.map((item, key) => (
                 <div 
                   key={key} 
-                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-md transition-shadow duration-300 bg-[#C3C5FF]"
+                  className="rounded-lg border border-[#C3C5FF] transition-shadow duration-300 bg-[#C3C5FF]"
                 >
                   {/* <div className="h-2 bg-gradient-to-r from-[#3D506B] to-[#9C8DF0] rounded-t-lg"></div> */}
                   <div className="p-8">
@@ -407,7 +407,7 @@ export const About = () => {
               {valueItems.map((item, key) => (
                 <div 
                   key={key} 
-                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group bg-[#C3C5FF]"
+                  className="rounded-lg border border-[#C3C5FF] hover:-translate-y-1 transition-all duration-300 group bg-[#C3C5FF]"
                 >
                   <div className="relative h-32 rounded-t-lg overflow-hidden">
                     <img src={item.backgroundImage} alt="" className="w-full h-full object-cover transition-opacity duration-300 " />

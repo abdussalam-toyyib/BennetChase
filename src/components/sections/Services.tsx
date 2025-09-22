@@ -82,16 +82,16 @@ export default function Services() {
                 </SectionTitle>
 
                 {/* Heading */}
-                <Title className="text-center mx-auto mb-6 text-white max-w-3xl">
+                <Title className="text-center mx-auto mt-4 mb-10 text-white max-w-3xl">
                     Powerful Accounting Solutions, Delivered with Precision
                 </Title>
 
 
                 {/* Subtitle */}
-                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
+                {/* <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
                     From startups to established enterprises, we provide comprehensive financial services 
                     that drive growth and ensure compliance.
-                </p>
+                </p> */}
 
                 {/* Hero Service Showcase */}
                 <div className="mb-16 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
