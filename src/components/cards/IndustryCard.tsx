@@ -25,7 +25,7 @@ export const IndustryCard: React.FC<IndustryCardProps> = ({
         ${
           active
             ? "bg-[#3D2763] text-white shadow-lg"
-            : "bg-white/5 text-gray-900 shadow-sm hover:bg-white/20"
+            : "bg-[#C3C5FF] text-gray-900 shadow-sm"
         }
       `}
     >

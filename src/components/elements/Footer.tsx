@@ -14,7 +14,7 @@ import logo from "../../assets/Bennett-Chase-Logo-white.png"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#151457] border-t border-gray-700  text-white">
+    <footer className="bg-[#1F1334] border-t border-gray-700  text-white">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}

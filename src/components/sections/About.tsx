@@ -303,11 +303,11 @@ export const About = () => {
   ]
 
   return (
-    <section id="about" className="relative pt-10 sm:pt-15 lg:pt-20 bg-[#B8B9F0] overflow-hidden">
-      <Container className="lg:px-30 lg:py-10 sm:py-4 md:py-7 relative z-10">
+    <section id="about" className="relative bg-[#B8B9F0] overflow-hidden pt-12 sm:pt-16 md:pt-20 lg:pt-[72px]">
+      <Container className="relative z-10">
         
         <SectionTitle variant="left" color="default">
-          <Minus /> About
+          <Minus /> About Us
         </SectionTitle>
 
         <div className="flex flex-col">
@@ -316,7 +316,7 @@ export const About = () => {
             <div className="flex flex-col gap-6 lg:w-1/2">
               
               {/* Stat card */}
-              <div className="relative bg-gradient-to-b from-[#3D506B]/20 to-[#9C8DF0]/30 backdrop-blur-sm rounded-lg p-6 text-white">
+              <div className="relative bg-[#C3C5FF] backdrop-blur-sm rounded-lg p-6 text-gray-800">
                 <div className="absolute inset-0 opacity-10 rounded-lg overflow-hidden">
                   <img src="/api/placeholder/400/200" alt="" className="w-full h-full object-cover" />
                 </div>
@@ -331,7 +331,7 @@ export const About = () => {
 
                 {/* Additional stat */}
                 <div className="flex items-center gap-4 mt-6 pt-4 border-t border-white/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#9C8DF0] to-[#3D506B] rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#9C8DF0] to-[#3D506B] rounded-full flex items-center justify-center text-gray-800 font-bold">
                     500+
                   </div>
                   <div>
@@ -342,7 +342,7 @@ export const About = () => {
               </div>
 
               {/* Intro text card */}
-              <div className="relative z-10 bg-gradient-to-b from-[#3D506B]/20 to-[#9C8DF0]/30 backdrop-blur-sm p-6 rounded-lg flex flex-col gap-8 text-white">
+              <div className="relative z-10 bg-[#C3C5FF] backdrop-blur-sm p-6 rounded-lg flex flex-col gap-8 text-gray-800">
                 <Title>Your Trusted Accounting Partner</Title>
                 <Paragraph>
                   Bennett & Chase was established with a vision to make accounting more
@@ -376,9 +376,9 @@ export const About = () => {
               {expertItems.map((item, key) => (
                 <div 
                   key={key} 
-                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-md transition-shadow duration-300 bg-gradient-to-br from-[#3D506B]/5 to-[#9C8DF0]/5"
+                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-md transition-shadow duration-300 bg-[#C3C5FF]"
                 >
-                  <div className="h-2 bg-gradient-to-r from-[#3D506B] to-[#9C8DF0] rounded-t-lg"></div>
+                  {/* <div className="h-2 bg-gradient-to-r from-[#3D506B] to-[#9C8DF0] rounded-t-lg"></div> */}
                   <div className="p-8">
                     <div className="flex items-center gap-4 mb-4">
                       <div className="w-12 h-12 bg-[#9C8DF0]/20 rounded-lg flex items-center justify-center">
@@ -407,7 +407,7 @@ export const About = () => {
               {valueItems.map((item, key) => (
                 <div 
                   key={key} 
-                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group bg-gradient-to-br from-[#3D506B]/5 to-[#9C8DF0]/5"
+                  className="rounded-lg shadow-sm border border-[#3D506B]/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group bg-[#C3C5FF]"
                 >
                   <div className="relative h-32 rounded-t-lg overflow-hidden">
                     <img src={item.backgroundImage} alt="" className="w-full h-full object-cover transition-opacity duration-300 " />

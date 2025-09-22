@@ -14,13 +14,13 @@ import payroll2 from "../../assets/payroll2.png"
 import financial from "../../assets/finance.svg"
 import financial2 from "../../assets/advise.png"
 import teamwork from "../../assets/teamwork.jpeg"
-import success from "../../assets/success.jpg"
-import success1 from "../../assets/success1.jpg"
-import success2 from "../../assets/success2.png"
-import success3 from "../../assets/success3.png"
+// import success from "../../assets/success.jpg"
+// import success1 from "../../assets/success1.jpg"
+// import success2 from "../../assets/success2.png"
+// import success3 from "../../assets/success3.png"
 
 export default function Services() {
-    const images = [success, success1, success2, success3];
+    // const images = [success, success1, success2, success3];
     const expertItems = [
         {
             title: 'Business Accounting',
@@ -72,9 +72,9 @@ export default function Services() {
     ]
 
     return (
-        <section id="services" className="relative py-16 bg-[#151457] overflow-hidden">
+        <section id="services" className="relative pt-12 sm:pt-16 md:pt-20 lg:pt-[72px] pb-16 bg-[#151457] overflow-hidden">
 
-            <Container className="relative z-10 lg:px-20">
+            <Container className="relative z-10">
                 {/* Section Title */}
                 <SectionTitle variant="center" color="white" className="mb-4">
                     <Calculator />
@@ -82,9 +82,10 @@ export default function Services() {
                 </SectionTitle>
 
                 {/* Heading */}
-                <Title className="text-center mb-6 text-white">
+                <Title className="text-center mx-auto mb-6 text-white max-w-3xl">
                     Powerful Accounting Solutions, Delivered with Precision
                 </Title>
+
 
                 {/* Subtitle */}
                 <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
@@ -237,7 +238,7 @@ export default function Services() {
                         ))}
                     </div>
                 </div> */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                {/* <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                     <h3 className="text-xl font-bold text-white text-center mb-8">Client Success Stories</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {images.map((image, index) => (
@@ -253,7 +254,7 @@ export default function Services() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
             </Container>
         </section>
     )

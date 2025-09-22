@@ -42,29 +42,85 @@ export const Navbar = () => {
   }, [open])
 
   return (
-    <header className="bg-[#FFFFFF] sticky z-[100] top-0 py-6 shadow-xl">
-      <Container className="">
+    // <header className="bg-[#FFFFFF] sticky z-[100] top-0 py-6 shadow-xl">
+    //   <Container className="">
+    //     <nav className="w-full relative" ref={menuRef}>
+    //       {/* Top row: logo + (desktop links & CTA) + mobile toggle */}
+    //       <div className="flex items-center justify-between gap-4">
+    //         {/* Logo (always visible) */}
+    //         <Logo src={logo} altText="logo" />
+
+    //         {/* Desktop links (center) */}
+    //         <div className="hidden lg:flex flex-1 justify-center items-center">
+    //           <ul className="flex gap-x-6 text-lg text-heading-2">
+    //             {navItems.map((item, key) => (
+    //               <NavItem href={item.href} text={item.name} key={key} />
+    //             ))}
+    //           </ul>
+    //         </div>
+
+    //         {/* Desktop CTA (right) */}
+    //         <div className="hidden lg:flex lg:min-w-max items-center">
+    //           <BottonLink text="Book a Consultation" href="#cta" />
+    //         </div>
+
+    //         {/* Mobile menu button */}
+    //         <button
+    //           type="button"
+    //           onClick={() => setOpen((v) => !v)}
+    //           className="lg:hidden inline-flex items-center justify-center w-10 h-10"
+    //           aria-expanded={open}
+    //           aria-controls="mobile-nav"
+    //           aria-label="Toggle menu"
+    //         >
+    //           {open ? <X size={28} /> : <Menu size={28} />}
+    //         </button>
+    //       </div>
+
+    //       {/* Mobile dropdown panel */}
+    //       <div
+    //         id="mobile-nav"
+    //         className={`lg:hidden absolute left-0 top-full w-full bg-white border-t border-box-border 
+    //                     transition-[max-height,opacity] duration-300 ease-in-out overflow-hidden
+    //                     ${open ? "max-h-[75vh] opacity-100" : "max-h-0 opacity-0"}`}
+    //       >
+    //         <ul className="px-6 pt-6 pb-4 flex flex-col gap-y-4 text-lg text-heading-2">
+    //           {navItems.map((item, key) => (
+    //             <li key={key} onClick={() => setOpen(false)}>
+    //               <NavItem href={item.href} text={item.name} />
+    //             </li>
+    //           ))}
+    //         </ul>
+    //         <div className="px-4 pb-6 border-box-border" onClick={() => setOpen(false)}>
+    //           <BottonLink text="Book a Consultation" href="#cta" />
+    //         </div>
+    //       </div>
+    //     </nav>
+    //   </Container>
+    // </header>
+    <header className="bg-[#FFFFFF] sticky z-[100] top-0 shadow-xl 
+                   py-3 sm:py-3 md:py-4 lg:py-5">
+      <Container>
         <nav className="w-full relative" ref={menuRef}>
-          {/* Top row: logo + (desktop links & CTA) + mobile toggle */}
           <div className="flex items-center justify-between gap-4">
-            {/* Logo (always visible) */}
+            {/* Logo */}
             <Logo src={logo} altText="logo" />
 
-            {/* Desktop links (center) */}
+            {/* Desktop links */}
             <div className="hidden lg:flex flex-1 justify-center items-center">
-              <ul className="flex gap-x-6 text-lg text-heading-2">
+              <ul className="flex gap-x-6 text-base md:text-lg lg:text-xl text-heading-2">
                 {navItems.map((item, key) => (
                   <NavItem href={item.href} text={item.name} key={key} />
                 ))}
               </ul>
             </div>
 
-            {/* Desktop CTA (right) */}
+            {/* Desktop CTA */}
             <div className="hidden lg:flex lg:min-w-max items-center">
               <BottonLink text="Book a Consultation" href="#cta" />
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile toggle */}
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
@@ -77,26 +133,27 @@ export const Navbar = () => {
             </button>
           </div>
 
-          {/* Mobile dropdown panel */}
+          {/* Mobile dropdown */}
           <div
             id="mobile-nav"
             className={`lg:hidden absolute left-0 top-full w-full bg-white border-t border-box-border 
                         transition-[max-height,opacity] duration-300 ease-in-out overflow-hidden
                         ${open ? "max-h-[75vh] opacity-100" : "max-h-0 opacity-0"}`}
           >
-            <ul className="px-6 pt-6 pb-4 flex flex-col gap-y-4 text-lg text-heading-2">
+            <ul className="px-6 pt-6 pb-4 flex flex-col gap-y-4 text-base sm:text-lg text-heading-2">
               {navItems.map((item, key) => (
                 <li key={key} onClick={() => setOpen(false)}>
                   <NavItem href={item.href} text={item.name} />
                 </li>
               ))}
             </ul>
-            <div className="px-4 pb-6 border-box-border" onClick={() => setOpen(false)}>
+            <div className="px-4 pb-6" onClick={() => setOpen(false)}>
               <BottonLink text="Book a Consultation" href="#cta" />
             </div>
           </div>
         </nav>
       </Container>
     </header>
+
   )
 }

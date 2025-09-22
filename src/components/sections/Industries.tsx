@@ -63,7 +63,7 @@ export const Industries = () => {
     },
   ];
  return (
-  <section id="industries" className="py-20 bg-[#B8B9F0]">
+  <section id="industries" className=" pt-12 sm:pt-16 md:pt-20 lg:pt-[72px] pb-16 bg-[#B8B9F0]">
    <Container>
     {/* Section Header */}
     <div className="text-left mb-16 relative">

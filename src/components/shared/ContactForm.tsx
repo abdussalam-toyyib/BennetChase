@@ -51,9 +51,9 @@ export const ContactForm: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] text-white py-4 mt-3 cursor-pointer rounded-lg font-medium transition"
+          className="w-full bg-[#B8B9F0] text-black py-4 mt-3 cursor-pointer rounded-lg font-medium transition"
         >
-          Send →
+          Send
         </button>
       </form>
     </div>

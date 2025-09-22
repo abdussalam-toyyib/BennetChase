@@ -38,7 +38,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 bg-[#151457] lg:px-20">
+    <section id="testimonials" className="pb-16 bg-[#151457]">
       <Container>
         {/* Section Title */}
         <SectionTitle variant="center" color="white" className="mb-4">
