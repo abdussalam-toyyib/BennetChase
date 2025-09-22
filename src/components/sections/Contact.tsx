@@ -1,4 +1,4 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Container } from "../shared/Container";
 import { SectionTitle } from "../shared/SectionTitle";
 import { Title } from "../shared/Title";
