@@ -72,7 +72,7 @@ export default function Services() {
     ]
 
     return (
-        <section id="services" className="relative pt-12 sm:pt-16 md:pt-20 lg:pt-[72px] pb-16 bg-[#151457] overflow-hidden">
+        <section id="services" className="relative pt-12 sm:pt-16 md:pt-20 lg:pt-[77px] pb-16 bg-[#151457] overflow-hidden">
 
             <Container className="relative z-10">
                 {/* Section Title */}

@@ -8,9 +8,9 @@ import contact from "../../assets/office.jpg";
 
 export default function Contact() {
   return (
-    <section id="contact" className="pt-12 sm:pt-16 md:pt-20 lg:pt-[72px] pb-16 bg-[#151457] text-gray-300">
+    <section id="contact" className="pt-12 sm:pt-16 md:pt-20 lg:pt-[77px] pb-16 bg-[#151457] text-gray-300">
       <Container>
-        <SectionTitle variant="left" color="default" className="mb-4 text-white">
+        <SectionTitle variant="left" color="white" className="mb-4">
           <MessageCircle />
            Contact Us
         </SectionTitle>
