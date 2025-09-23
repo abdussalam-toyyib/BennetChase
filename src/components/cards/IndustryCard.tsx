@@ -34,8 +34,6 @@ export const IndustryCard: React.FC<IndustryCardProps> = ({
           <h3 className="font-semibold text-lg mb-1 transition-colors duration-500 ease-in-out">
             {title}
           </h3>
-
-          {/* Instead of animating <p>, just swap the content */}
           <p
             className={`text-sm mt-1 transition-all duration-500 ease-in-out overflow-hidden
               ${active ? "h-auto opacity-100 text-white" : "h-0 opacity-0"}

@@ -107,7 +107,7 @@ export const About = () => {
 
             {/* Right */}
             <div className="flex flex-col gap-6 lg:w-1/2">
-              <div className="rounded-[4px] overflow-hidden w-full max-w-[520px] h-full sm:mx-auto shadow-lg">
+              <div className="rounded-[4px] overflow-hidden w-full max-w-[520px] h-full sm:mx-auto">
                 <img
                   src={hero2}
                   alt="Professional accounting team at work"

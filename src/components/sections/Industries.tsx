@@ -102,7 +102,7 @@ export const Industries = () => {
         <img
           src={industries[activeIndex].image}
           alt={industries[activeIndex].title}
-          className="w-full h-full object-cover rounded-3xl shadow-lg"
+          className="w-full h-full object-cover rounded-3xl"
         />
       </div>
     </div>
