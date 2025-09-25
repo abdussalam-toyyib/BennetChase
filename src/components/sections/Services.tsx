@@ -193,21 +193,18 @@ export default function Services() {
                 {/* Process Section */}
                 <div className="mb-16">
                     <h3 className="text-2xl font-bold text-white text-center mb-12">Our Process</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {processSteps.map((step, index) => (
                             <div key={index} className="text-center group">
                                 <div className="relative mb-6">
-                                    {/* Connection Line */}
                                     {index < processSteps.length - 1 && (
                                         <div className="hidden lg:block absolute top-1/2 left-full w-full h-0.5 bg-gradient-to-r from-[#B8B9F0] to-transparent transform -translate-y-1/2 z-0"></div>
                                     )}
                                     
-                                    {/* Step Circle */}
                                     <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
                                         <step.icon className="w-6 h-6 text-white" />
                                     </div>
                                     
-                                    {/* Step Number */}
                                     <div className="text-xs font-bold text-[#B8B9F0] bg-white/10 rounded-full w-6 h-6 flex items-center justify-center mx-auto -mt-2">
                                         {step.step}
                                     </div>
@@ -217,7 +214,31 @@ export default function Services() {
                                 <p className="text-gray-400 text-sm">{step.description}</p>
                             </div>
                         ))}
+                    </div> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {processSteps.map((step, index) => (
+                            <div
+                            key={index}
+                            className="group relative bg-white/5 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-white/10 text-center"
+                            >
+                            {/* Step Number Badge */}
+                            <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/20 border border-[#B8B9F0] text-[#B8B9F0] text-sm font-bold flex items-center justify-center shadow-sm">
+                                {step.step}
+                            </div>
+
+                            {/* Icon Circle */}
+                            <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <step.icon className="w-6 h-6 text-white" />
+                            </div>
+
+                            {/* Step Content */}
+                            <h4 className="text-white font-semibold mb-2">{step.title}</h4>
+                            <p className="text-gray-400 text-sm">{step.description}</p>
+                            </div>
+                        ))}
                     </div>
+
+
                 </div>
 
                 {/* Client Success Gallery */}
