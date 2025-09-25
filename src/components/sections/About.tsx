@@ -123,7 +123,7 @@ export const About = () => {
               Our Mission and Vision
             </h3>
                         
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 p-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:p-5">
               {expertItems.map((item, key) => (
                 <div 
                   key={key} 
@@ -154,7 +154,7 @@ export const About = () => {
               Our Core Values 
             </h3>
                         
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 p-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 lg:p-6">
               {valueItems.map((item, key) => (
                 <div 
                   key={key} 

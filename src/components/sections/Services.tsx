@@ -221,14 +221,16 @@ export default function Services() {
                             key={index}
                             className="group relative bg-white/5 rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-white/10 text-center"
                             >
-                            {/* Step Number Badge */}
-                            <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/20 border border-[#B8B9F0] text-[#B8B9F0] text-sm font-bold flex items-center justify-center shadow-sm">
-                                {step.step}
-                            </div>
-
                             {/* Icon Circle */}
-                            <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <div className="relative mb-6 inline-block">
+                                {/* Step Number — visible only on mobile/tablet */}
+                                <span className="absolute -top-2 -right-2 text-xs font-medium text-white/40 md:block lg:hidden">
+                                {step.step}
+                                </span>
+
+                                <div className="w-16 h-16 bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
                                 <step.icon className="w-6 h-6 text-white" />
+                                </div>
                             </div>
 
                             {/* Step Content */}
@@ -237,8 +239,6 @@ export default function Services() {
                             </div>
                         ))}
                     </div>
-
-
                 </div>
 
                 {/* Client Success Gallery */}
