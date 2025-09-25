@@ -95,7 +95,7 @@ import heroImage from "../../assets/hero4.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden  bg-[#21194E]">
       {/* Background for small screens */}
       <div
         className="absolute inset-0 lg:hidden bg-cover bg-center"
