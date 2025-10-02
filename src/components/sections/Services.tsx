@@ -14,13 +14,8 @@ import payroll2 from "../../assets/payroll2.png"
 import financial from "../../assets/finance.svg"
 import financial2 from "../../assets/advise.png"
 import teamwork from "../../assets/teamwork.jpeg"
-// import success from "../../assets/success.jpg"
-// import success1 from "../../assets/success1.jpg"
-// import success2 from "../../assets/success2.png"
-// import success3 from "../../assets/success3.png"
 
 export default function Services() {
-    // const images = [success, success1, success2, success3];
     const expertItems = [
         {
             title: 'Business Accounting',
@@ -87,13 +82,6 @@ export default function Services() {
                 </Title>
 
 
-                {/* Subtitle */}
-                {/* <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
-                    From startups to established enterprises, we provide comprehensive financial services 
-                    that drive growth and ensure compliance.
-                </p> */}
-
-                {/* Hero Service Showcase */}
                 <div className="mb-16 bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div>
@@ -168,22 +156,6 @@ export default function Services() {
                         <p className="text-gray-300 text-sm mb-4 leading-relaxed">
                           {item.text}
                         </p>
-
-                        {/* Features List */}
-                        {/* <ul className="space-y-2 mb-6">
-                          {item.features.map((feature, idx) => (
-                            <li key={idx} className="flex items-center gap-2 text-sm text-gray-400">
-                              <div className="w-1.5 h-1.5 bg-[#B8B9F0] rounded-full"></div>
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul> */}
-
-                        {/* CTA Button */}
-                        {/* <button className="w-full flex items-center justify-center gap-2 bg-[#B8B9F0]/10 hover:bg-[#B8B9F0]/20 border border-[#B8B9F0]/30 text-white py-2.5 px-4 rounded-lg transition-all duration-300 group-hover:border-[#B8B9F0]/60">
-                          <span className="text-sm font-medium">Learn More</span>
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                        </button> */}
                       </div>
                     </div>
                   ))}
@@ -193,28 +165,7 @@ export default function Services() {
                 {/* Process Section */}
                 <div className="mb-16">
                     <h3 className="text-2xl font-bold text-white text-center mb-12">Our Process</h3>
-                    {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {processSteps.map((step, index) => (
-                            <div key={index} className="text-center group">
-                                <div className="relative mb-6">
-                                    {index < processSteps.length - 1 && (
-                                        <div className="hidden lg:block absolute top-1/2 left-full w-full h-0.5 bg-gradient-to-r from-[#B8B9F0] to-transparent transform -translate-y-1/2 z-0"></div>
-                                    )}
-                                    
-                                    <div className="relative z-10 w-16 h-16 bg-gradient-to-br from-[#B8B9F0] to-[#3D506BFF] rounded-full flex items-center justify-center mx-auto mb-2 group-hover:scale-110 transition-transform duration-300">
-                                        <step.icon className="w-6 h-6 text-white" />
-                                    </div>
-                                    
-                                    <div className="text-xs font-bold text-[#B8B9F0] bg-white/10 rounded-full w-6 h-6 flex items-center justify-center mx-auto -mt-2">
-                                        {step.step}
-                                    </div>
-                                </div>
-                                
-                                <h4 className="text-white font-semibold mb-2">{step.title}</h4>
-                                <p className="text-gray-400 text-sm">{step.description}</p>
-                            </div>
-                        ))}
-                    </div> */}
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {processSteps.map((step, index) => (
                             <div
@@ -241,41 +192,6 @@ export default function Services() {
                     </div>
                 </div>
 
-                {/* Client Success Gallery */}
-                {/* <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                    <h3 className="text-xl font-bold text-white text-center mb-8">Client Success Stories</h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {[1,2,3,4].map((i) => (
-                            <div key={i} className="relative group cursor-pointer">
-                                <img 
-                                    src={success `${i}`}
-                                    alt={`Success story ${i}`}
-                                    className="w-full h-24 object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <p className="text-white text-xs p-2 font-medium">Case Study {i}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
-                {/* <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                    <h3 className="text-xl font-bold text-white text-center mb-8">Client Success Stories</h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {images.map((image, index) => (
-                            <div key={index} className="relative group cursor-pointer">
-                                <img 
-                                    src={image}
-                                    alt={`Success story ${index + 1}`}
-                                    className="w-full h-24 object-cover rounded-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                                    <p className="text-white text-xs p-2 font-medium">Case Study {index + 1}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
             </Container>
         </section>
     )

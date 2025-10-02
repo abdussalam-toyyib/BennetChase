@@ -74,11 +74,7 @@ export const Industries = () => {
      <Title className="text-gray-900 mb-8 max-w-[700px]">
       Empowering Businesses Across Sectors
      </Title>
-          {/* <a href="#" className="flex items-center gap-2 absolute top-0 right-0 py-2 px-4 rounded-full border border-gray-400 bg-white text-[#3D2763] hover:bg-gray-100 transition-colors duration-200">
-            View All Services <ArrowRight className="w-4 h-4" />
-          </a> */}
-    
-
+          
     <div className="flex flex-col lg:flex-row items-stretch gap-12">
       {/* Left Column: Industry Cards */}
       <div className="flex flex-col gap-6 flex-1">

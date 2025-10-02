@@ -36,28 +36,7 @@ export default function Contact() {
               />
             </div>
 
-            {/* <div className="space-y-6">
-              <ContactInfoItem
-                icon={<MapPin />}
-                title="Our Location"
-                lines={[
-                  "8708 Technology Forest Pl Suite 126 – B, The Woodlands, TX 77381",
-                ]}
-              />
-              <ContactInfoItem
-                icon={<Phone />}
-                title="Phone Number"
-                lines={["123-456-7890", "402-555-9876"]}
-              />
-              <ContactInfoItem
-                icon={<Mail />}
-                title="Email Address"
-                lines={["info@bennettchase.com", "support@bennettchase.com"]}
-              />
-            </div> */}
           </div>
-
-          {/* Right Column */}
           <ContactForm />
         </div>
       </Container>
